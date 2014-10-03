@@ -570,7 +570,7 @@ margin-bottom:21px;
 text-transform:uppercase;
 font-family:open sans;
 font-size:14px;
-background:url(../images/button2.png) top left no-repeat;
+background:url(../images/button2.png) bottom left no-repeat;
 color:#384c3f;
 font-size:14px;
 padding-top:16px;
@@ -578,7 +578,7 @@ text-align:center;
 }
 
 .button2 a:hover{
-background: url(../images/button2.png) bottom left no-repeat;
+background: url(../images/button2.png) top left no-repeat;
 color:#fff;
 }
 
