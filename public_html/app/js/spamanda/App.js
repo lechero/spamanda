@@ -31,6 +31,27 @@
                     },
                     holder: 'holderContent'
                 },
+                Services: {
+                    files: {
+                        html: 'app/html/services.html',
+                        js: 'app/js/spamanda/view/services.js'
+                    },
+                    holder: 'holderContent'
+                },
+                Portfolio: {
+                    files: {
+                        html: 'app/html/portfolio.html',
+                        js: 'app/js/spamanda/view/portfolio.js'
+                    },
+                    holder: 'holderContent'
+                },
+                News: {
+                    files: {
+                        html: 'app/html/news.html',
+                        js: 'app/js/spamanda/view/news.js'
+                    },
+                    holder: 'holderContent'
+                },
                 Contact: {
                     files: {
                         html: 'app/html/contact.html',
@@ -50,6 +71,15 @@
                 'about': function () {
                     Saga.AssetManager.show(App.Assets.About);
                 },
+                'services': function () {
+                    Saga.AssetManager.show(App.Assets.Services);
+                },
+                'portfolio': function () {
+                    Saga.AssetManager.show(App.Assets.Portfolio);
+                },
+                'news': function () {
+                    Saga.AssetManager.show(App.Assets.News);
+                },
                 'contact': function () {
                     Saga.AssetManager.show(App.Assets.Contact);
                 }
@@ -62,6 +92,9 @@
                 'app/js/theme/jquery-migrate.js',
                 'app/js/theme/jquery.sequence.js',
                 'app/js/theme/jquery.bxslider.js',
+                'app/js/theme/quicksand1.js',
+                'app/js/theme/quicksand.js',
+                'app/js/theme/prettyphoto.js',
                 'app/js/theme/bootstrap.js',
                 'app/js/spamanda/simple-animation.js',
                 'app/js/spamanda/simple-view.js'
