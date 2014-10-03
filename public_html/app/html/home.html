@@ -308,18 +308,18 @@ Reservation
     </div>
 </div>
 
-
 <!--
 
-<script type="text/javascript" src="js/jquery.js"></script>
 
-<script type="text/javascript" src="js/jquery-migrate.js"></script>
+<script type="text/javascript" src="app/theme/js/jquery.js"></script>
 
-
+<script type="text/javascript" src="app/theme/js/jquery-migrate.js"></script>
 
 <script>
+    //console.error("BODY SCRIPT");
     //<![CDATA[
     $('html, body').ready(function () {
+        console.error("BODY READY !!! ");
         var options = {
             thumbs: false,
             nextButton: false,
@@ -335,11 +335,11 @@ Reservation
 ]
         };
         var mySequence = $("#sequence").sequence(options).data("sequence");
+        
+        
     });
     //]]>
 </script>
-
-
 
 <script>
     //<![CDATA[
@@ -347,8 +347,6 @@ Reservation
             jQuery('#mycollapsible').collapse("hide");
             //]]>
 </script>
-
-
 
 <script>
     //<![CDATA[
@@ -379,7 +377,6 @@ Reservation
     });
     //]]>
 </script>
-
 
 <script src="app/js/theme/jquery.sequence.js"></script>
 <script src="app/js/theme/jquery.bxslider.js"></script>

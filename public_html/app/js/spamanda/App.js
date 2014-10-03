@@ -57,6 +57,12 @@
             Preload: [
                 'app/js/libs/tweenlite/TweenLite.min.js',
                 'app/js/libs/tweenlite/CSSPlugin.min.js',
+                'app/js/theme/jquery.js',
+                'app/js/theme/jquery-migrate.js',
+                'app/js/theme/jquery-migrate.js',
+                'app/js/theme/jquery.sequence.js',
+                'app/js/theme/jquery.bxslider.js',
+                'app/js/theme/bootstrap.js',
                 'app/js/spamanda/simple-animation.js',
                 'app/js/spamanda/simple-view.js'
             ]
