@@ -8,7 +8,6 @@ App.SimpleView = function (asset) {
         debug = Saga.Debug,
         e = Saga.Dom.getById,
         viewInit = function (cb) {
-            debug.log("SimpleView ->" + asset.name + ".init()");
             div = e(asset.name);
             debug.log("SimpleView ->" + asset.name + ".init()", div);
             App.SimpleAnimation.genContentInit(div, cb);

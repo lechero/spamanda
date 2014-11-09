@@ -66,7 +66,6 @@
                     Saga.Route.showPage("home");
                 },
                 'home': function () {
-                    console.error("SHOWING HOME");
                     Saga.AssetManager.show(App.Assets.Home);
                 },
                 'about': function () {

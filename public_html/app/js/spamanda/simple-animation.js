@@ -4,7 +4,9 @@
 App.SimpleAnimation = (function () {
     "use strict";
     var speed = 0.5,
+        debug = Saga.Debug,
         genContentInit = function (div, cb) {
+            //debug.error("genContentInit", div);
             TweenLite.set(div, {
                 css: {
                     autoAlpha: 0

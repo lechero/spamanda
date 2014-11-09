@@ -39,14 +39,6 @@
                 jQuery('#bxslider1').bxSlider();
             });
 
-            /*
-            function scrollToTop() {
-                $('html, body').animate({
-                    scrollTop: 0
-                }, 'slow');
-            }
-            */
-
             $('.collapse').live('show', function () {
                 $(this).parent().find('.accordion-heading').addClass('open'); //add active state to button on open
             });
@@ -64,8 +56,6 @@
         },
         deinit = function () {
             debug.log(asset.name + ".deinit()");
-
-
         };
 
     Saga.Util.extend(asset.View, App.SimpleView(asset));

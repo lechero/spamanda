@@ -24,8 +24,6 @@ App.Manager = (function () {
         startSite = function () {
             debug.log("App.Manager.startSite()");
 
-            
-
             Saga.AssetManager.once("Menu:shown", menuShown);
             Saga.AssetManager.show(App.Assets.Menu);
         },
