@@ -17,12 +17,14 @@ App.Manager = (function () {
         },
         menuShown = function () {
             //Saga.Route.showPage('home');
+            
+            Saga.Route.on("vars:changed", routeChanged);
+            Saga.Route.init(App.Routes);
         },
         startSite = function () {
             debug.log("App.Manager.startSite()");
 
-            Saga.Route.on("vars:changed", routeChanged);
-            Saga.Route.init(App.Routes);
+            
 
             Saga.AssetManager.once("Menu:shown", menuShown);
             Saga.AssetManager.show(App.Assets.Menu);
