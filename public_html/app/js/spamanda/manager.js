@@ -17,7 +17,7 @@ App.Manager = (function () {
         },
         menuShown = function () {
             //Saga.Route.showPage('home');
-            
+
             Saga.Route.on("vars:changed", routeChanged);
             Saga.Route.init(App.Routes);
         },
@@ -37,12 +37,42 @@ App.Manager = (function () {
         init = function () {
             debug.levels(["log", "info", "error", "warn", "trace"]);
             debug.log("App.Manager.init()");
-            
+
             Saga.AssetManager.init(App.Assets);
             Saga.AssetManager.initTemplates(App.Templates, templatesLoaded);
         };
 
     pub = {
+        toggleSlider: function (page) {
+            if (App.Slider.hasOwnProperty(page)) {
+                e('sequenceSliderContainer').innerHTML = "";
+                e('sequenceSliderPagination').innerHTML = "";
+
+                var indicator,
+                    slide,
+                    slides = App.Slider[page];
+
+                u.each(slides, function (data, id) {
+                    indicator = document.createElement('div');
+                    d.addClass(indicator, "paginationslider");
+                    slide = document.createElement('li');
+                    if (id === 0) {
+                        d.addClass(slide, "animate-in");
+                        d.addClass(indicator, "current");
+                    }
+                    slide.innerHTML = App.Templates.Slide({
+                        slide: data
+                    });
+                    e('sequenceSliderContainer').appendChild(slide);
+                    e('sequenceSliderPagination').appendChild(indicator);
+                });
+
+                e('sequenceSlider').style.display = "block";
+            } else {
+                e('sequenceSlider').style.display = "none";
+            }
+
+        },
         routeChanged: function (hv) {
             routeChanged(hv);
         },

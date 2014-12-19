@@ -60,7 +60,69 @@
                     holder: 'holderContent'
                 }
             },
-            Templates: {},
+            Slider: {
+                Home: [
+                    {
+                        'title': "Thai Spa and Wellness",
+                        'subtitle': "premium website template",
+                        'content': "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.<span>Lorem ipsum dolor sit amet</span> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt",
+                        'url': "#services",
+                        'btnText': "Hurry Up",
+                        'image': "app/images/model1.png"
+                    },
+                    {
+                        'title': "Thai Spa and Wellness",
+                        'subtitle': "premium website template",
+                        'content': "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.<span>Lorem ipsum dolor sit amet</span> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt",
+                        'url': "#services",
+                        'btnText': "Hurry Up",
+                        'image': "app/images/model1.png"
+                    },
+                    {
+                        'title': "Thai Spa and Wellness",
+                        'subtitle': "premium website template",
+                        'content': "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.<span>Lorem ipsum dolor sit amet</span> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt",
+                        'url': "#services",
+                        'btnText': "Hurry Up",
+                        'image': "app/images/model1.png"
+                    },
+                    {
+                        'title': "Thai Spa and Wellness",
+                        'subtitle': "premium website template",
+                        'content': "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.<span>Lorem ipsum dolor sit amet</span> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt",
+                        'url': "#services",
+                        'btnText': "Hurry Up",
+                        'image': "app/images/model1.png"
+                    },
+                    {
+                        'title': "Thai Spa and Wellness",
+                        'subtitle': "premium website template",
+                        'content': "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.<span>Lorem ipsum dolor sit amet</span> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt",
+                        'url': "#services",
+                        'btnText': "Hurry Up",
+                        'image': "app/images/model1.png"
+                    },
+                    {
+                        'title': "Thai Spa and Wellness",
+                        'subtitle': "premium website template",
+                        'content': "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.<span>Lorem ipsum dolor sit amet</span> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt",
+                        'url': "#services",
+                        'btnText': "Hurry Up",
+                        'image': "app/images/model1.png"
+                    },
+                    {
+                        'title': "Thai Spa and Wellness",
+                        'subtitle': "premium website template",
+                        'content': "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.<span>Lorem ipsum dolor sit amet</span> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt",
+                        'url': "#services",
+                        'btnText': "Hurry Up",
+                        'image': "app/images/model1.png"
+                    }
+                ]
+            },
+            Templates: {
+                Slide: 'app/html/slide.template.html'
+            },
             Routes: {
                 'default': function () {
                     Saga.Route.showPage("home");

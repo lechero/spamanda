@@ -11,7 +11,7 @@
         init = function () {
             debug.log(asset.name + ".init()");
             
-            
+            App.Manager.toggleSlider(asset.name);
             
         },
         deinit = function () {

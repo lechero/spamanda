@@ -10,6 +10,8 @@
         u = Saga.Util,
         init = function () {
             debug.log(asset.name + ".init()");
+            
+            App.Manager.toggleSlider(asset.name);
 /*
             $('html, body').ready(function () {
                 jQuery('#mycollapsible').collapse("hide");
