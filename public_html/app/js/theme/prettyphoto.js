@@ -875,21 +875,27 @@
 	};
 	
 	function getHashtag(){
+        /*
 		url = location.href;
 		hashtag = (url.indexOf('#!') != -1) ? decodeURI(url.substring(url.indexOf('#!')+2,url.length)) : false;
 		return hashtag;
+        */
 	};
 	
 	function setHashtag(){
+        /*
 		if(typeof theRel == 'undefined') return; // theRel is set on normal calls, it's impossible to deeplink using the API
 		location.hash = '!' + theRel + '/'+rel_index+'/';
+        */
 	};
 	
 	function clearHashtag(){
 		// Clear the hashtag only if it was set by prettyPhoto
+        /*
 		url = location.href;
 		hashtag = (url.indexOf('#!prettyPhoto')) ? true : false;
 		if(hashtag) location.hash = "!prettyPhoto";
+        */
 	}
 	
 	function getParam(name,url){

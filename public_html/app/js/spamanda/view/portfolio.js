@@ -12,17 +12,20 @@
             debug.log(asset.name + ".init()");
 
             App.Manager.toggleSlider(asset.name);
-            
+
             $('html, body').ready(function () {
                 jQuery('#mycollapsible').collapse("hide");
             });
 
             $('html, body').ready(function () {
-                jQuery("a[class^='prettyPhoto']").prettyPhoto();
+                jQuery("a[class^='prettyPhoto']").prettyPhoto({
+                    social_tools: false,
+                    deeplinking: false
+                });
             });
-            
-            
-            
+
+
+
 
         },
         deinit = function () {
