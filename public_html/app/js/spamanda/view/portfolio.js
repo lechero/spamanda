@@ -20,6 +20,9 @@
             $('html, body').ready(function () {
                 jQuery("a[class^='prettyPhoto']").prettyPhoto();
             });
+            
+            
+            
 
         },
         deinit = function () {
