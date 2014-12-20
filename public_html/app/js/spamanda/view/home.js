@@ -34,7 +34,6 @@
             $('html, body').ready(function () {
                 jQuery('#bxslider1').bxSlider();
             });
-
             
             $('.collapse').live('show', function () {
                 $(this).parent().find('.accordion-heading').addClass('open'); //add active state to button on open

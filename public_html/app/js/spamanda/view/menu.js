@@ -52,6 +52,10 @@
         init = function () {
             debug.log(asset.name + ".init()");
             div = e('Menu');
+            
+            $('html, body').ready(function () {
+                jQuery('#mycollapsible').collapse("hide");
+            });
             //setButtonHandlers();
             //addListeners();
             //setMenuButtons();
