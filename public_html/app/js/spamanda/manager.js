@@ -10,6 +10,7 @@ App.Manager = (function () {
         d = Saga.Dom,
         u = Saga.Util,
         e = d.elem,
+        sequence = false,
         load = Saga.StackLoader(),
 
         routeChanged = function (route) {
@@ -40,6 +41,27 @@ App.Manager = (function () {
 
             Saga.AssetManager.init(App.Assets);
             Saga.AssetManager.initTemplates(App.Templates, templatesLoaded);
+        },
+        initSequence = function () {
+            //debug.log(asset.name + ".initSequence()");
+            var options = {
+                    thumbs: false,
+                    nextButton: false,
+                    prevButton: false,
+                    pagination: true,
+                    animateStartingFrameIn: true,
+                    autoPlay: true,
+                    autoPlayDelay: 3000,
+                    preloader: true,
+                    preloadTheseFrames: [1],
+                    preloadTheseImages: [
+                        "app/images/smalldot1.png"
+                    ]
+                },
+                mySequence;
+            sequence = $("#sequence").sequence(options).data("sequence");
+
+            //debug.log(asset.name + ".initSequence()", mySequence, $("#sequence"), $("#sequence").sequence(options).data("sequence"));
         };
 
     pub = {
@@ -68,8 +90,44 @@ App.Manager = (function () {
                 });
 
                 e('sequenceSlider').style.display = "block";
+
+
+                initSequence();
+                //initSequence();
+                /*
+                var options = {
+                    thumbs: false,
+                    nextButton: false,
+                    prevButton: false,
+                    pagination: true,
+                    animateStartingFrameIn: true,
+                    autoPlay: true,
+                    autoPlayDelay: 3000,
+                    preloader: true,
+                    preloadTheseFrames: [1],
+                    preloadTheseImages: [
+                        "app/images/smalldot1.png"
+                    ]
+                },
+                mySequence = $("#sequence").sequence(options).data("sequence");
+                */
+                /*
+                jQuery('#bxslider1').bxSlider();
+
+                $('.collapse').live('show', function () {
+                    $(this).parent().find('.accordion-heading').addClass('open'); //add active state to button on open
+                });
+
+                $('.collapse').live('hide', function () {
+                    $(this).parent().find('.accordion-heading').removeClass('open'); //remove active state to button on close
+                });
+                */
             } else {
                 e('sequenceSlider').style.display = "none";
+                if (sequence) {
+                    sequence.destroy();
+                    sequence = false;
+                }
             }
 
         },

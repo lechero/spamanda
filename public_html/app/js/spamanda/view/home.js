@@ -32,13 +32,10 @@
             debug.log(asset.name + ".initThemeStuff()");
 
             $('html, body').ready(function () {
-                jQuery('#mycollapsible').collapse("hide");
-            });
-
-            $('html, body').ready(function () {
                 jQuery('#bxslider1').bxSlider();
             });
 
+            
             $('.collapse').live('show', function () {
                 $(this).parent().find('.accordion-heading').addClass('open'); //add active state to button on open
             });
@@ -46,13 +43,15 @@
             $('.collapse').live('hide', function () {
                 $(this).parent().find('.accordion-heading').removeClass('open'); //remove active state to button on close
             });
+            
+            
         },
         init = function () {
             debug.log(asset.name + ".init()");
             
             App.Manager.toggleSlider(asset.name);
             
-            initSequence();
+            //initSequence();
 
             initThemeStuff();
         },
