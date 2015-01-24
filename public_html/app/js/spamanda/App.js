@@ -31,12 +31,19 @@
                     },
                     holder: 'holderContent'
                 },
-                Services: {
+                Massages: {
                     files: {
-                        html: 'app/html/services.html',
-                        js: 'app/js/spamanda/view/services.js'
+                        html: 'app/html/massages.html',
+                        js: 'app/js/spamanda/view/massages.js'
                     },
                     holder: 'holderContent'
+                },
+                Beautycare: {
+                  files: {
+                    html: 'app/html/beautycare.html',
+                    js: 'app/js/spamanda/view/beautycare.js'
+                  },
+                  holder: 'holderContent'
                 },
                 Portfolio: {
                     files: {
@@ -45,13 +52,13 @@
                     },
                     holder: 'holderContent'
                 },
-                News: {
-                    files: {
-                        html: 'app/html/news.html',
-                        js: 'app/js/spamanda/view/news.js'
-                    },
-                    holder: 'holderContent'
-                },
+                // News: {
+                //     files: {
+                //         html: 'app/html/news.html',
+                //         js: 'app/js/spamanda/view/news.js'
+                //     },
+                //     holder: 'holderContent'
+                // },
                 Contact: {
                     files: {
                         html: 'app/html/contact.html',
@@ -64,7 +71,7 @@
                 Home: [
                     {
                         'title': "Thai Spa and Wellness",
-                        'subtitle': "premium website template",
+                        'subtitle': "Well-being and relaxation",
                         'content': "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.<span>Lorem ipsum dolor sit amet</span> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt",
                         'url': "#services",
                         'btnText': "Hurry Up",
@@ -72,7 +79,7 @@
                     },
                     {
                         'title': "Thai Spa and Wellness",
-                        'subtitle': "premium website template",
+                        'subtitle': "Well-being and relaxation",
                         'content': "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.<span>Lorem ipsum dolor sit amet</span> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt",
                         'url': "#services",
                         'btnText': "Hurry Up",
@@ -80,39 +87,7 @@
                     },
                     {
                         'title': "Thai Spa and Wellness",
-                        'subtitle': "premium website template",
-                        'content': "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.<span>Lorem ipsum dolor sit amet</span> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt",
-                        'url': "#services",
-                        'btnText': "Hurry Up",
-                        'image': "app/images/model1.png"
-                    },
-                    {
-                        'title': "Thai Spa and Wellness",
-                        'subtitle': "premium website template",
-                        'content': "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.<span>Lorem ipsum dolor sit amet</span> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt",
-                        'url': "#services",
-                        'btnText': "Hurry Up",
-                        'image': "app/images/model1.png"
-                    },
-                    {
-                        'title': "Thai Spa and Wellness",
-                        'subtitle': "premium website template",
-                        'content': "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.<span>Lorem ipsum dolor sit amet</span> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt",
-                        'url': "#services",
-                        'btnText': "Hurry Up",
-                        'image': "app/images/model1.png"
-                    },
-                    {
-                        'title': "Thai Spa and Wellness",
-                        'subtitle': "premium website template",
-                        'content': "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.<span>Lorem ipsum dolor sit amet</span> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt",
-                        'url': "#services",
-                        'btnText': "Hurry Up",
-                        'image': "app/images/model1.png"
-                    },
-                    {
-                        'title': "Thai Spa and Wellness",
-                        'subtitle': "premium website template",
+                        'subtitle': "Well-being and relaxation",
                         'content': "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.<span>Lorem ipsum dolor sit amet</span> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt",
                         'url': "#services",
                         'btnText': "Hurry Up",
@@ -133,8 +108,11 @@
                 'about': function () {
                     Saga.AssetManager.show(App.Assets.About);
                 },
-                'services': function () {
-                    Saga.AssetManager.show(App.Assets.Services);
+                'massages': function () {
+                    Saga.AssetManager.show(App.Assets.Massages);
+                },
+                'beautycare': function () {
+                  Saga.AssetManager.show(App.Assets.Beautycare);
                 },
                 'portfolio': function () {
                     Saga.AssetManager.show(App.Assets.Portfolio);
