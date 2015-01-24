@@ -45,6 +45,13 @@
                   },
                   holder: 'holderContent'
                 },
+                Packages: {
+                  files: {
+                    html: 'app/html/packages.html',
+                    js: 'app/js/spamanda/view/packages.js'
+                  },
+                  holder: 'holderContent'
+                },
                 Portfolio: {
                     files: {
                         html: 'app/html/portfolio.html',
