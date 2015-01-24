@@ -605,7 +605,9 @@ body{
 	color:#4f715c;
 }
 
-
+.sendgift {
+	padding-bottom: 20px;
+}
 
 .sendgift a:link, .sendgift a:visited{
 	display:block;
@@ -1932,7 +1934,7 @@ body{
 	font-size:36px;
 	color:#7d1551;
 	text-align:center;
-	padding-top:21px;
+	padding-top:12px;
 	margin:0;
 	border-bottom:1px dashed #3a4d40;
 	border-top:1px dashed #3a4d40;
@@ -1945,7 +1947,8 @@ body{
 	color:#384c3f;
 	text-transform:uppercase;
 	text-align:left;
-	margin-top:30px;
+	/*margin-top:30px;*/
+	line-height: 60px;
 }
 
 .underslider2a h2 span
@@ -2411,8 +2414,8 @@ body{
 	width: 100%;
 	height: 100%;
 	display: inline-block;
-	margin: 0;
-	float:left;
+	margin: 0 auto 38px auto;
+	/*float:left;*/
 }
 
 
