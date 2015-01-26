@@ -45,7 +45,7 @@
                   },
                   holder: 'holderContent'
                 },
-                Packages: {
+                SpaPackages: {
                   files: {
                     html: 'app/html/packages.html',
                     js: 'app/js/spamanda/view/packages.js'
@@ -120,6 +120,9 @@
                 },
                 'beautycare': function () {
                   Saga.AssetManager.show(App.Assets.Beautycare);
+                },
+                'packages': function () {
+                  Saga.AssetManager.show(App.Assets.SpaPackages);
                 },
                 'portfolio': function () {
                     Saga.AssetManager.show(App.Assets.Portfolio);
