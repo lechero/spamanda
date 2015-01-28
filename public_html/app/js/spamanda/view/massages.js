@@ -23,4 +23,4 @@
     Saga.AssetManager.on(asset.name + ":inited", init);
     Saga.AssetManager.on(asset.name + ":hidden", deinit);
 
-}(App.Assets.Services));
+}(App.Assets.Massages));
